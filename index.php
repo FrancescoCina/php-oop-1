@@ -18,15 +18,39 @@ require_once('modules/Movie.php');
 </head>
 
 <body>
-    <h1><?= $avengers->print_title_movie(); ?></h1>
+    <!-- Film Batman -->
+    <h3><?= $batman->print_title_movie(); ?></h3>
+    <ul>
+        <li><?= $batman->print_genre_movie() ?></li>
+        <li><?= $batman->producer; ?></li>
+        <li><?= $batman->production_year; ?></li>
+        <li><?= $batman->production_country; ?></li>
+    </ul>
+
+
+    <!-- Film James Bond -->
+
+    <h3><?= $james_bond->print_title_movie(); ?></h3>
+    <ul>
+        <li><?= $james_bond->print_genre_movie() ?></li>
+        <li><?= $james_bond->producer; ?></li>
+        <li><?= $james_bond->production_year; ?></li>
+        <li><?= $james_bond->production_country; ?></li>
+    </ul>
+
+
+
+
+
+
+
+    <!-- Film Avengers -->
+    <h3><?= $avengers->print_title_movie(); ?></h3>
     <ul>
         <li><?= $avengers->print_genre_movie() ?></li>
         <li><?= $avengers->producer; ?></li>
-        <li><?= $avengers->year_production; ?></li>
+        <li><?= $avengers->production_year; ?></li>
         <li><?= $avengers->production_country; ?></li>
-
-
-
     </ul>
 </body>
 

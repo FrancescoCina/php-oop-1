@@ -56,5 +56,5 @@ $james_bond->production_country = 'UK';
 // ------- ASSEGNAZIONE TERZO OGGETTO (AVENGERS);
 
 $avengers = new Movie('The Avengers', 'Action/Adventure', 'Joe Russo');
-$avengers->year_production = 2012;
+$avengers->production_year = 2012;
 $avengers->production_country = 'USA';
