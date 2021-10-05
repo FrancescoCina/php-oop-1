@@ -27,6 +27,8 @@ require_once('modules/Movie.php');
         <li><?= $batman->production_country; ?></li>
     </ul>
 
+    <p>Questo film è uscito <?= $batman->how_many_years_released() ?> anni fa</p>
+
 
     <!-- Film James Bond -->
 
@@ -37,6 +39,9 @@ require_once('modules/Movie.php');
         <li><?= $james_bond->production_year; ?></li>
         <li><?= $james_bond->production_country; ?></li>
     </ul>
+
+
+    <p>Questo film è uscito <?= $james_bond->how_many_years_released() ?> anni fa</p>
 
 
 
@@ -52,6 +57,9 @@ require_once('modules/Movie.php');
         <li><?= $avengers->production_year; ?></li>
         <li><?= $avengers->production_country; ?></li>
     </ul>
+
+    <p>Questo film è uscito <?= $avengers->how_many_years_released() ?> anni fa</p>
+
 </body>
 
 </html>

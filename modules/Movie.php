@@ -21,12 +21,18 @@ class Movie
     // Funzioni/metodi per stampare
     public function print_title_movie()
     {
-        echo $this->title;
+        return $this->title;
     }
 
     public function print_genre_movie()
     {
-        echo $this->genre;
+        return $this->genre;
+    }
+
+    // Funzione per stabilire da quanto è uscito un film 
+    public function how_many_years_released()
+    {
+        return 2021 - $this->production_year;
     }
 }
 
@@ -35,7 +41,7 @@ class Movie
 
 $batman = new Movie('Batman Begins', 'Thriller', 'Charles Roven');
 
-$batman->production_year = 2016;
+$batman->production_year = 2005;
 $batman->production_country = 'USA';
 
 
