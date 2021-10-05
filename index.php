@@ -1,3 +1,12 @@
+<?php
+
+require_once('modules/Movie.php');
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +18,16 @@
 </head>
 
 <body>
-    Prova
+    <h1><?= $avengers->print_title_movie(); ?></h1>
+    <ul>
+        <li><?= $avengers->print_genre_movie() ?></li>
+        <li><?= $avengers->producer; ?></li>
+        <li><?= $avengers->year_production; ?></li>
+        <li><?= $avengers->production_country; ?></li>
+
+
+
+    </ul>
 </body>
 
 </html>

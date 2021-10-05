@@ -17,6 +17,17 @@ class Movie
         $this->genre = $_genre;
         $this->producer = $_producer;
     }
+
+    // Funzioni/metodi per stampare
+    public function print_title_movie()
+    {
+        echo $this->title;
+    }
+
+    public function print_genre_movie()
+    {
+        echo $this->genre;
+    }
 }
 
 // ------- ASSEGNAZIONE PRIMO OGGETTO (BATMAN);
@@ -28,7 +39,7 @@ $batman->production_year = 2016;
 $batman->production_country = 'USA';
 
 
-// var_dump($batman);
+
 
 // ------- ASSEGNAZIONE SECONDO OGGETTO (JAMES BOND);
 
@@ -39,13 +50,11 @@ $james_bond->production_year = 2012;
 $james_bond->production_country = 'UK';
 
 
-// var_dump($james_bond);
+
 
 
 // ------- ASSEGNAZIONE TERZO OGGETTO (AVENGERS);
 
-$avengers = new Movie('The Avengers', 'Action', 'Joe Russo');
+$avengers = new Movie('The Avengers', 'Action/Adventure', 'Joe Russo');
 $avengers->year_production = 2012;
-$avengers->year_country = 'USA';
-
-var_dump($avengers);
+$avengers->production_country = 'USA';
