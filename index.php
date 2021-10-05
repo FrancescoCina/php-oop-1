@@ -14,7 +14,7 @@ require_once('modules/Movie.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Movies</title>
 </head>
 
 <body>
@@ -30,6 +30,8 @@ require_once('modules/Movie.php');
     <p>Questo film è uscito <?= $batman->how_many_years_released() ?> anni fa</p>
 
 
+
+    <hr>
     <!-- Film James Bond -->
 
     <h3><?= $james_bond->print_title_movie(); ?></h3>
@@ -44,7 +46,7 @@ require_once('modules/Movie.php');
     <p>Questo film è uscito <?= $james_bond->how_many_years_released() ?> anni fa</p>
 
 
-
+    <hr>
 
 
 
@@ -59,6 +61,7 @@ require_once('modules/Movie.php');
     </ul>
 
     <p>Questo film è uscito <?= $avengers->how_many_years_released() ?> anni fa</p>
+
 
 </body>
 
