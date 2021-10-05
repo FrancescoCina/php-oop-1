@@ -1,6 +1,6 @@
 <?php
 
-require_once('modules/Movie.php');
+require_once('models/Movie.php');
 
 ?>
 
